@@ -1,3 +1,3 @@
 <?php
- $db = sqlite_open('monitortemp.db', 0666, $sqliteerror) 
+ $db = SQLite3->open('monitortemp.db'); 
   ?>
