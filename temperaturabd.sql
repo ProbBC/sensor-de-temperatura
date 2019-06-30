@@ -1,5 +1,5 @@
 CREATE TABLE localizacao(
-	cod_localizacao		INTEGER	NOT NULL NULL,
+	cod_localizacao		INTEGER	    NOT NULL,
     desc_localizacao	VARCHAR(50) NOT NULL,
     CONSTRAINT pk_localizacao
     	PRIMARY KEY (cod_localizacao)
