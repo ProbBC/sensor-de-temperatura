@@ -12,5 +12,5 @@
     //$sql .= "VALUES ('".$_GET["localizacao"]."', ".$_GET["valor"].", '$data', '$hora');";
     $sql .= "VALUES ('$localizacao', $valor, '$data', '$hora');";
 
-    sqlite_query($sql);
+    $db->exec($sql);
 ?>
