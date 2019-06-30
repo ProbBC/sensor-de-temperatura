@@ -1,12 +1,12 @@
 CREATE TABLE localizacao(
-	cod_localizacao		INTEGER	NOT NULL AUTO_INCREMENT,
+	cod_localizacao		INTEGER	NOT NULL NULL,
     desc_localizacao	VARCHAR(50) NOT NULL,
     CONSTRAINT pk_localizacao
     	PRIMARY KEY (cod_localizacao)
 );
 
 CREATE TABLE temperatura(
-	cod_temperatura		INTEGER			NOT NULL    AUTO_INCREMENT,
+	cod_temperatura		INTEGER			NOT NULL,
     cod_localizacao		INTEGER			NOT NULL,
     valor_temperatura	DECIMAL(5,2)	NOT NULL,
     data_temperatura	DATE			NOT NULL,
