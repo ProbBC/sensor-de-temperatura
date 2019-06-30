@@ -1,7 +1,7 @@
 <?php
     class MyDB extends SQLite3 {
       function __construct() {
-         $this->open('monitortemp.db');
+         $this->open('monitortemp.db', SQLITE3_OPEN_READWRITE);
       }
    }
    $db = new MyDB();
