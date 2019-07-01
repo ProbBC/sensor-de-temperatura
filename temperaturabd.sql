@@ -18,5 +18,5 @@ CREATE TABLE temperatura(
     	REFERENCES localizacao(cod_localizacao)
 );
 
-INSERT INTO localizacao (desc_localizacao) VALUES ('Quarto');
-INSERT INTO temperatura (cod_localizacao, valor_temperatura, data_temperatura, hora_temperatura) VALUES (0, 24.44, '2019/06/18', '18:36:00');
+--INSERT INTO localizacao (desc_localizacao) VALUES ('Quarto');
+--INSERT INTO temperatura (cod_localizacao, valor_temperatura, data_temperatura, hora_temperatura) VALUES (0, 24.44, '2019/06/18', '18:36:00');

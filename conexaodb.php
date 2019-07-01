@@ -1,16 +1,15 @@
 <?php
-
-$localhost = "127.0.0.1";
-$username = "prob";
-$password = "1201";
-$dbname = "monitortemp";
-
-$connect = new mysqli($localhost, $username, $password, $dbname);
-
-if($connect->connect_error) {
-    die("Falha na conexao : " . $connect->connect_error);
-} else {
-    // echo "Conectado!";
-}
-
-?>
+    class MyDB extends SQLite3 {
+      function __construct() {
+         //É necessário dar permissão para o usuario do apache
+         //(chown -R www-data /var/www/html)
+         $this->open('monitortemp.db', (SQLITE3_OPEN_READWRITE | SQLITE3_OPEN_CREATE));
+      }
+   }
+   $db = new MyDB();
+   if(!$db) {
+      echo $db->lastErrorMsg();
+   } else {
+      echo "Banco aberto com sucesso\n";
+   }
+  ?>

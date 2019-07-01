@@ -1,5 +1,5 @@
 <?php
-    include("conexaodb.php");
+    include("conexaosqlite3.php");
 
     $data = date("Y-m-d");
     $hora = date("H:i:s");
@@ -12,7 +12,5 @@
     //$sql .= "VALUES ('".$_GET["localizacao"]."', ".$_GET["valor"].", '$data', '$hora');";
     $sql .= "VALUES ('$localizacao', $valor, '$data', '$hora');";
 
-
-    $connect->query($sql);
-
+    $db->exec($sql);
 ?>
