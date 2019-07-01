@@ -1,0 +1,8 @@
+<html>
+<head>
+<title Monitor De Temperatura/>
+<meta charset="utf-8"> 
+</head>
+<?php include("conexaosqlite.php"); while (1){ $res = SQLite->exec('select * from temperatura'); echo $res;} ?>
+
+</html>
