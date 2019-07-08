@@ -14,7 +14,7 @@
 <html>
 <head>
     <title>Registros de Temperatura</title>
-
+    // a partir dessa a parte a tabela é criada e html
     <style type="text/css">
         .manageMember {
             width: 50%;
@@ -34,6 +34,7 @@
 <div class="manageMember">
     <p>Último registro de Temperatura: </p>
     <?php
+    // select para pegar os dados do banco
     $sql = "SELECT * FROM temperatura WHERE cod_localizacao = 0 ORDER BY data_temperatura, hora_temperatura;";
     $result = $db->query($sql); //Executa a query e guarda o resultado em result
 
