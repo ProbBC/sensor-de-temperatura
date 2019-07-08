@@ -10,6 +10,6 @@
    if(!$db) {
       echo $db->lastErrorMsg();
    } else {
-      echo "Banco aberto com sucesso\n";
+      //echo "Banco aberto com sucesso\n";
    }
   ?>
