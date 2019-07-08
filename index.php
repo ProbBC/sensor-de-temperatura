@@ -15,7 +15,7 @@
 <html>
 <head>
     <title>Registros de Temperatura</title>
-    // a partir dessa a parte a tabela é criada e html
+    <!-- a partir dessa a parte a tabela é criada e html -->
     <style type="text/css">
         .manageMember {
             width: 50%;
